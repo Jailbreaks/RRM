@@ -1,5 +1,6 @@
 # RRM
-The exploit gains code execution on the Wi-Fi firmware on the iPhone 7.
+The exploit gains code execution on the Wi-Fi firmware on the iPhone 7. <br>
+https://bugs.chromium.org/p/project-zero/issues/detail?id=1289
 
 The exploit has been tested against the Wi-Fi firmware as present on iOS 10.2 (14C92), but should work on all versions of iOS up to 10.3.3 (included). However, some symbols might need to be adjusted for different versions of iOS, see "exploit/symbols.py" for more information.
 
@@ -29,3 +30,4 @@ To run the exploit, you must execute the following steps:
   - Run "exploit/attack.py"
 
 Following the steps above should result in installation of a simple backdoor allowing read/write access to the firmware. You can interact with the backdoor to gain R/W access to the firmware by calling the "read_dword" and "write_dword" functions, respectively.
+
